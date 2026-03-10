@@ -1,0 +1,185 @@
+\chapter{HASIL DAN PEMBAHASAN}
+
+Bab ini menyajikan hasil dari penelitian yang telah dilakukan serta
+analisis terhadap hasil tersebut. Berbeda dengan Bab 3 yang menjelaskan
+metodologi penelitian, Bab ini berfokus pada penyajian hasil eksperimen
+serta pembahasan terhadap temuan yang diperoleh.
+
+Hasil penelitian dapat disajikan dalam berbagai bentuk seperti tabel,
+gambar, grafik, diagram, maupun visualisasi lainnya yang mampu
+merepresentasikan hasil penelitian secara jelas.
+
+Setiap tabel atau gambar yang ditampilkan harus dijelaskan dalam teks
+dan dirujuk menggunakan perintah \texttt{\textbackslash ref}. Tidak
+diperbolehkan menampilkan tabel atau gambar tanpa penjelasan.
+
+\section{DATA}
+\subsection{Cara Menyematkan Gambar}
+
+Pada Bab ini, hasil penelitian sering direpresentasikan dalam bentuk gambar
+seperti diagram, grafik, arsitektur sistem, maupun visualisasi lainnya.
+Untuk menyematkan gambar pada dokumen \LaTeX, langkah-langkah yang perlu
+dilakukan adalah sebagai berikut.
+
+\subsubsection{Menambahkan Gambar ke Folder Project}
+
+Sebelum menyematkan gambar pada dokumen, terlebih dahulu unggah file gambar
+ke dalam folder \texttt{images} yang terdapat pada project \LaTeX.
+
+Disarankan untuk menggunakan nama file yang jelas, menggunakan huruf kecil,
+serta menghindari penggunaan spasi. Sebagai contoh:
+
+\begin{verbatim}
+images/diagram_sistem.png
+images/alur_penelitian.png
+images/hasil_eksperimen.png
+\end{verbatim}
+
+\subsubsection{Menulis Skrip Penyematan Gambar}
+
+Setelah gambar ditambahkan ke dalam folder \texttt{images}, gambar dapat
+disematkan menggunakan lingkungan \texttt{figure}. Contoh skrip dapat
+dilihat sebagai berikut:
+
+\begin{verbatim}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{images/nama_gambar.png}
+\caption{Judul gambar ditulis di sini}
+\label{fig:nama-gambar}
+\end{figure}
+\end{verbatim}
+
+Penjelasan bagian-bagian pada skrip di atas:
+
+\begin{itemize}
+\item \texttt{figure} : lingkungan untuk menampilkan gambar.
+\item \texttt{centering} : memposisikan gambar di tengah halaman.
+\item \texttt{includegraphics} : memanggil file gambar dari folder project.
+\item \texttt{caption} : judul atau keterangan gambar.
+\item \texttt{label} : penanda yang digunakan untuk memanggil gambar.
+\end{itemize}
+
+\subsubsection{Menyebutkan Gambar dalam Teks}
+
+Setiap gambar yang ditampilkan harus dijelaskan dalam teks. Untuk
+menyebutkan gambar, gunakan perintah \texttt{\textbackslash ref}. Contoh:
+
+\begin{verbatim}
+Seperti ditunjukkan pada Gambar \ref{fig:nama-gambar}, sistem yang
+dikembangkan mampu melakukan proses klasifikasi secara otomatis.
+\end{verbatim}
+
+Dengan cara ini, nomor gambar akan dihasilkan secara otomatis oleh
+\LaTeX sehingga penulis tidak perlu menuliskan nomor gambar secara
+manual.
+
+\subsection{Cara Menyematkan Tabel}
+
+Selain gambar, hasil penelitian juga sering disajikan dalam bentuk tabel.
+Tabel biasanya digunakan untuk menampilkan data numerik, hasil eksperimen,
+maupun perbandingan metode.
+
+\subsubsection{Menulis Skrip Tabel}
+
+Untuk menyematkan tabel pada dokumen \LaTeX, gunakan lingkungan
+\texttt{table} dan \texttt{tabular}. Contoh skrip tabel adalah sebagai
+berikut:
+
+\begin{verbatim}
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Metode & Accuracy & Precision & Recall \\
+\midrule
+Metode A & 0.85 & 0.83 & 0.82 \\
+Metode B & 0.90 & 0.88 & 0.87 \\
+Metode Usulan & 0.94 & 0.92 & 0.91 \\
+\bottomrule
+\end{tabular}
+\caption{Hasil perbandingan performa metode}
+\label{tab:hasil-metode}
+\end{table}
+\end{verbatim}
+
+Penjelasan bagian skrip tabel:
+
+\begin{itemize}
+\item \texttt{table} : lingkungan untuk menampilkan tabel.
+\item \texttt{tabular} : struktur tabel yang menentukan jumlah kolom.
+\item \texttt{toprule}, \texttt{midrule}, dan \texttt{bottomrule} :
+digunakan untuk membuat garis tabel yang lebih rapi.
+\item \texttt{caption} : judul tabel.
+\item \texttt{label} : penanda untuk referensi tabel.
+\end{itemize}
+
+\subsubsection{Menyebutkan Tabel dalam Teks}
+
+Setiap tabel harus dijelaskan dalam teks sebelum atau sesudah tabel
+ditampilkan. Untuk memanggil tabel gunakan perintah
+\texttt{\textbackslash ref}. Contoh:
+
+\begin{verbatim}
+Hasil evaluasi metode dapat dilihat pada Tabel \ref{tab:hasil-metode}.
+\end{verbatim}
+
+Dengan cara ini, nomor tabel akan dihasilkan secara otomatis oleh
+\LaTeX.
+
+\subsection{Catatan Penting}
+
+Dalam penyusunan Bab ini, setiap gambar atau tabel yang ditampilkan
+harus selalu dijelaskan dalam teks. Tidak diperbolehkan menampilkan
+gambar atau tabel tanpa pembahasan.
+
+Contoh yang benar:
+
+"Seperti ditunjukkan pada Gambar \ref{fig:research-flow}, sistem yang dikembangkan terdiri dari tiga komponen utama."
+
+Contoh yang salah:
+
+Menampilkan gambar atau tabel tanpa menjelaskan isi atau maknanya.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hasil Implementasi Sistem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bagian ini menjelaskan hasil implementasi dari sistem atau metode yang
+telah dirancang pada Bab 3. Penjelasan dapat mencakup tampilan sistem,
+proses implementasi, serta fitur yang dihasilkan.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hasil Eksperimen}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bagian ini menyajikan hasil eksperimen yang dilakukan pada penelitian.
+Hasil eksperimen biasanya disajikan dalam bentuk tabel atau grafik agar
+lebih mudah dipahami.
+
+\subsection{Hasil Pengujian Dataset}
+
+Bagian ini menjelaskan hasil pengujian metode terhadap dataset yang
+digunakan dalam penelitian.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Analisis Hasil Penelitian}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bagian ini berisi analisis terhadap hasil eksperimen yang telah
+diperoleh. Penulis harus menjelaskan makna dari setiap hasil yang
+ditampilkan serta menghubungkannya dengan tujuan penelitian.
+
+\subsection{Perbandingan Metode}
+
+Bagian ini menjelaskan perbandingan performa metode yang diusulkan
+dengan metode lain yang telah ada sebelumnya.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Diskusi}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Bagian diskusi berisi interpretasi hasil penelitian secara lebih
+mendalam. Penulis dapat menjelaskan kelebihan metode yang diusulkan,
+keterbatasan penelitian, serta implikasi hasil penelitian terhadap
+bidang yang diteliti.

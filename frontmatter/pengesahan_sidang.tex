@@ -1,0 +1,75 @@
+\ifthenelse{\boolean{scanPengesahanSidang}}
+{
+\includepdf[pages=1,fitpaper=true]{signature/pengesahan_sidang.pdf}
+}
+{
+% ===== TEMPLATE LATEX LEMBAR PENGESAHAN SIDANG SKRIPSI =====
+
+\begin{center}
+{\Large \textbf{LEMBAR PENGESAHAN\\SIDANG SKRIPSI}}
+\end{center}
+
+\vspace{0.8cm}
+
+\noindent
+Lembar pengesahan ini menyatakan bahwa mahasiswa berikut:
+
+\vspace{0.4cm}
+
+\noindent
+\begin{tabularx}{\textwidth}{>{\RaggedRight\arraybackslash}p{3.2cm} p{0.4cm} >{\RaggedRight\arraybackslash}X}
+Nama & : & \namaPenulis \\
+NIM & : & \nim \\
+Judul Skripsi & : & \judulSkripsiID \\
+\end{tabularx}
+
+\vspace{0.5cm}
+
+\noindent
+telah melaksanakan Sidang Skripsi pada tanggal \rule{4cm}{0.4pt} dan dinyatakan \textbf{LULUS}. Mahasiswa yang bersangkutan telah melakukan revisi sesuai dengan masukan tim penguji serta telah memenuhi seluruh persyaratan akademik dan administrasi sebagai bagian dari proses penyelesaian skripsi.
+
+\vspace{0.4cm}
+
+\noindent
+Dengan demikian skripsi ini diajukan untuk memenuhi salah satu syarat memperoleh gelar \textbf{Sarjana Komputer (S.Kom)}.
+
+\vspace{0.3cm}
+
+\begin{center}
+Tim Pembimbing dan Penguji
+\end{center}
+
+\vspace{0.3cm}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}>{\Centering\arraybackslash}X >{\Centering\arraybackslash}X@{}}
+
+Pembimbing 1 & Pembimbing 2 \\
+
+\kota, \rule{3cm}{0.4pt} & \kota, \rule{3cm}{0.4pt} \\
+[1.5cm]
+
+\rule{4cm}{0.4pt} & \rule{4cm}{0.4pt} \\
+
+\pembimbingSatu & \pembimbingDua \\
+NIP. \nipPembimbingSatu & NIP. \nipPembimbingDua
+
+\\[1.2cm]
+
+Penguji 1 & Penguji 2 \\
+
+\kota, \rule{3cm}{0.4pt} & \kota, \rule{3cm}{0.4pt} \\
+[1.5cm]
+
+\rule{4cm}{0.4pt} & \rule{4cm}{0.4pt} \\
+
+Nama Penguji 1 & Nama Penguji 2 \\
+NIP. \rule{3.5cm}{0.4pt} & NIP. \rule{3.5cm}{0.4pt}
+
+\end{tabularx}
+
+
+\newpage
+}
+
+\addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN SIDANG SKRIPSI}

@@ -1,0 +1,61 @@
+\documentclass[12pt,a4paper]{report}
+
+\input{config/packages}
+\input{config/metadata}
+\input{config/format}
+
+\begin{document}
+\hypersetup{pageanchor=false}
+
+% COVER
+\pagenumbering{roman}
+\input{frontmatter/cover}
+
+% LEMBAR PERSETUJUAN PROPOSAL
+\input{frontmatter/persetujuan_proposal}
+
+% LEMBAR PERSETUJUAN SEMINAR HASIL
+\input{frontmatter/persetujuan_semhas}
+
+% LEMBAR PENGESAHAN SEMINAR HASIL
+\input{frontmatter/pengesahan_semhas}
+
+% LEMBAR PERSETUJUAN SIDANG
+\input{frontmatter/pengesahan_sidang}
+
+% LEMBAR PERNYATAAN ORISINALITAS
+\input{frontmatter/pernyataan_orisinalitas}
+
+% ABSTRAK
+\input{frontmatter/abstrak_id}
+\input{frontmatter/abstrak_en}
+
+% KATA PENGANTAR
+\input{frontmatter/kata_pengantar}
+
+% DAFTAR ISI
+\addcontentsline{toc}{chapter}{DAFTAR ISI}
+\tableofcontents
+
+\addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
+\listoffigures
+
+\addcontentsline{toc}{chapter}{DAFTAR TABEL}
+\listoftables
+
+\newpage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+% BAB
+\input{chapters/bab1}
+\input{chapters/bab2}
+\input{chapters/bab3}
+\input{chapters/bab4}
+\input{chapters/bab5}
+\input{chapters/bab6}
+
+% DAFTAR PUSTAKA
+\printbibliography
+
+\end{document}

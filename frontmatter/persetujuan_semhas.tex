@@ -1,0 +1,54 @@
+\ifthenelse{\boolean{scanPersetujuanSemHas}}
+{
+\includepdf[pages=1,fitpaper=true]{signature/persetujuan_semhas.pdf}
+}
+{
+% ===== TEMPLATE LATEX LEMBAR PENGESAHAN SEMINAR HASIL =====
+
+\begin{center}
+{\Large \textbf{LEMBAR PERSETUJUAN\\SEMINAR HASIL}}
+\end{center}
+
+\vspace{0.8cm}
+
+\noindent
+Lembar pengesahan ini menyatakan bahwa mahasiswa berikut telah menyelesaikan pelaksanaan penelitian tugas akhir dan telah mendapatkan persetujuan dari dosen pembimbing untuk mengikuti ujian Seminar Hasil dalam rangka penyelesaian skripsi guna memenuhi salah satu syarat memperoleh gelar Sarjana Komputer (S.Kom).
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabularx}{\textwidth}{>{\RaggedRight\arraybackslash}p{3.2cm} p{0.4cm} >{\RaggedRight\arraybackslash}X}
+Nama & : & \namaPenulis \\
+NIM & : & \nim \\
+Judul Skripsi & : & \judulSkripsiID \\
+\end{tabularx}
+
+\vspace{0.8cm}
+
+\noindent
+Dengan ini dosen pembimbing menyatakan bahwa mahasiswa yang bersangkutan layak untuk mengikuti ujian Seminar Hasil sesuai dengan ketentuan akademik yang berlaku.
+
+\vspace{0.6cm}
+
+\begin{center}
+Menyetujui,
+\end{center}
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}>{\Centering\arraybackslash}X >{\Centering\arraybackslash}X@{}}
+Dosen Pembimbing 1 & Dosen Pembimbing 2 \\
+
+\kota, \tglPembSatuPersetujuanSemHas & \kota, \tglPembDuaPersetujuanSemHas \\[2.5cm]
+
+\rule{4cm}{0.4pt} & \rule{4cm}{0.4pt} \\
+
+\pembimbingSatu & \pembimbingDua \\
+NIP. \nipPembimbingSatu & NIP. \nipPembimbingDua
+\end{tabularx}
+
+\newpage
+}
+
+\addcontentsline{toc}{chapter}{LEMBAR PERSETUJUAN SEMINAR HASIL}

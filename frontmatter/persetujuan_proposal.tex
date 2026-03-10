@@ -1,0 +1,54 @@
+\ifthenelse{\boolean{scanPengesahanProposal}}
+{
+\includepdf[pages=1,fitpaper=true]{signature/persetujuan_proposal.pdf}
+}
+{
+% ===== TEMPLATE LATEX LEMBAR PERSETUJUAN PROPOSAL TUGAS AKHIR =====
+
+\begin{center}
+{\Large \textbf{LEMBAR PERSETUJUAN\\PROPOSAL TUGAS AKHIR}}
+\end{center}
+
+\vspace{0.8cm}
+
+\noindent
+Lembar persetujuan ini menyatakan bahwa proposal tugas akhir yang diajukan oleh mahasiswa berikut:
+
+\vspace{0.4cm}
+
+\noindent
+\begin{tabularx}{\textwidth}{>{\RaggedRight\arraybackslash}p{3.2cm} p{0.4cm} >{\RaggedRight\arraybackslash}X}
+Nama & : & \namaPenulis \\
+NIM & : & \nim \\
+Judul Skripsi & : & \judulSkripsiID \\
+\end{tabularx}
+
+\vspace{0.6cm}
+
+\noindent
+telah diperiksa dan disetujui oleh dosen pembimbing. Dengan persetujuan ini, mahasiswa dinyatakan layak untuk melanjutkan pelaksanaan penelitian tugas akhir sesuai dengan topik yang diajukan sebagai bagian dari proses penyusunan skripsi guna memenuhi salah satu syarat untuk memperoleh gelar Sarjana Komputer (S.Kom).
+
+\vspace{0.5cm}
+
+\begin{center}
+Menyetujui,
+\end{center}
+
+\vspace{0.5cm}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}>{\Centering\arraybackslash}X >{\Centering\arraybackslash}X@{}}
+Dosen Pembimbing 1 & Dosen Pembimbing 2 \\
+
+\kota, \tglPembSatuPersetujuanProposal & \kota, \tglPembDuaPersetujuanProposal \\[2.5cm]
+
+\rule{4cm}{0.4pt} & \rule{4cm}{0.4pt} \\
+
+\pembimbingSatu & \pembimbingDua \\
+NIP. \nipPembimbingSatu & NIP. \nipPembimbingDua
+\end{tabularx}
+
+\newpage
+}
+
+\addcontentsline{toc}{chapter}{LEMBAR PERSETUJUAN PROPOSAL TUGAS AKHIR}
